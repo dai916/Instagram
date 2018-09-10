@@ -51,6 +51,15 @@ class SettingViewController: UIViewController {
             let tabBarController = parent as! ESTabBarController
             tabBarController.setSelectedIndex(0, animated: false)
         }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // 表示名を取得してTextFieldに設定する
+        let user = Auth.auth().currentUser
+        if let user = user {
+            displayNameTextField.text = user.displayName
+        }
+    }
         override func viewDidLoad() {
             super.viewDidLoad()
         }

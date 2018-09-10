@@ -25,6 +25,7 @@ class CommentViewController: UIViewController {
             let postRef = Database.database().reference().child(Const.PostPath).child(postData.id!)
             let comments = ["comments": postData.comments]
             postRef.updateChildValues(comments)
+            dismiss(animated: true, completion: nil)
         }
     }
     @IBAction func handleCancelButton(_ sender: Any) {
