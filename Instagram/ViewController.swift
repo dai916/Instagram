@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         let homeViewController = storyboard?.instantiateViewController(withIdentifier: "Home")
         let settingViewController = storyboard?.instantiateViewController(withIdentifier: "Setting")
         tabBarController.setView(homeViewController, at: 0)
-        tabBarController.setView(homeViewController, at: 2)
+        tabBarController.setView(settingViewController, at: 2)
         
         // 真ん中のタブはボタンとして扱う
         tabBarController.highlightButton(at: 1)

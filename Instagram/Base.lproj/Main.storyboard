@@ -115,7 +115,7 @@
                                     <action selector="handleCancelButton:" destination="45p-jL-x9h" eventType="touchUpInside" id="1oO-yO-v8R"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="キャプション" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7A-Iq-kY0">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="キャプション" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7A-Iq-kY0">
                                 <rect key="frame" x="140" y="130" width="225" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -124,6 +124,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="G7A-Iq-kY0" firstAttribute="bottom" secondItem="X8D-Jw-MRc" secondAttribute="bottom" id="43A-Jb-UtY"/>
                             <constraint firstItem="FVp-Zd-0ni" firstAttribute="centerX" secondItem="PnZ-d2-fLp" secondAttribute="centerX" id="Frv-mT-OpH"/>
                             <constraint firstItem="FVp-Zd-0ni" firstAttribute="top" secondItem="MzM-I9-r7B" secondAttribute="bottom" constant="20" id="LW8-Hx-nZQ"/>
                             <constraint firstItem="G7A-Iq-kY0" firstAttribute="leading" secondItem="X8D-Jw-MRc" secondAttribute="trailing" constant="10" id="QTf-s1-L70"/>
@@ -204,7 +205,7 @@
         <!--Comment View Controller-->
         <scene sceneID="ill-5R-Y73">
             <objects>
-                <viewController id="jja-BG-IOX" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Comment" id="jja-BG-IOX" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TtN-LN-EB3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
